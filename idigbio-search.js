@@ -1,5 +1,6 @@
 var cm = require("sdk/context-menu");
 var elf = require("sdk/self");
+var tabs = require('sdk/tabs');
 
 var allItem = cm.Item({
   label: "in any field",
@@ -44,10 +45,13 @@ var searchMenu = cm.Menu({
                  '  var endTxt = "%22}";'+
                  '  if (data.length > 66)'+
                  '    endTxt = "%22}}";'+
-                 '  window.location.href = searchURL + endTxt;' +
+                 '  self.postMessage(searchURL + endTxt);' +
                  '});',
   items: [moreMenu, collectorItem, localityItem, allItem],
   image: elf.data.url("iDigBio_Favicon-16.png"),
+    onMessage: function (data) {
+        tabs.open(data);
+    }
 });
 
 
