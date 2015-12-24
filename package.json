@@ -1,0 +1,16 @@
+{
+  "title": "iDigBio Search Addon",
+  "name": "idigbio-firefox-addon",
+  "version": "0.0.1",
+  "description": "A basic add-on to assist users with iDigBio occurrance record searches",
+  "main": "idigbio-search.js",
+  "author": "Kevin J. Love",
+  "engines": {
+    "firefox": ">=38.0a1",
+    "fennec": ">=38.0a1"
+  },
+  "license": "MIT",
+  "keywords": [
+    "jetpack"
+  ]
+}
