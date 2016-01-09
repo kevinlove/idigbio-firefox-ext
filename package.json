@@ -1,8 +1,8 @@
 {
   "title": "iDigBio Search Addon",
   "name": "idigbio-firefox-addon",
-  "version": "0.0.2",
-  "description": "A basic add-on to assist users with iDigBio occurrance record searches",
+  "version": "0.0.3",
+  "description": "A basic add-on to assist users with iDigBio occurrence record searches",
   "main": "idigbio-search.js",
   "author": "Kevin J. Love",
   "engines": {
